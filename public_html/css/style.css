@@ -1,0 +1,100 @@
+a {
+  text-decoration: none;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+.order_label{
+  text-align: right;
+}
+@media only screen and (max-width: 580px) {
+  .order_label {
+    text-align: left;
+  }
+}
+
+.new_order_card{
+  box-shadow: 0 0 25px 0 lightgrey;
+}
+
+.order_list_card{
+  box-shadow: 0 0 15px 0 lightgrey;
+}
+
+.buttons_group{
+  text-align: center;
+}
+
+.add_order_button{
+  text-align: center;
+  width: 150px;
+}
+
+.remove_order_button{
+  text-align: center;
+  width: 150px;
+}
+
+.dashboard-jumbotron {
+  width: 100%;
+  height: 100%;
+  background-color: azure;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
+  opacity: 0.7;
+}
+.loader {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid #333;
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+  animation: loader 2s linear infinite;
+}
+@keyframes loader {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader:after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: absolute;
+  position: absolute;
+  border-radius: 50%;
+  top: -10px;
+  left: 39px;
+}
+.loader:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: -10px;
+  left: 39px;
+}
